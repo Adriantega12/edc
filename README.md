@@ -2,7 +2,7 @@
 
 Short script to quickly process and classify monthly expenses. Copy and paste concepts from an EDC with however you wanna clasify them, in the following format:
 
-```
+```text
 # <concept name 1>
 <expense 1>
 <expense 2>
@@ -17,7 +17,7 @@ Short script to quickly process and classify monthly expenses. Copy and paste co
 
 Most EDCs' concepts include the expense in the format of `<date> <concept short description> $ <expense total> <bank's given class>`, script will use the space between "$" and the expense total to get it so it's important that it remains there, for example:
 
-```
+```text
 # Transportation
 28/02/2022 STP UBER PENDING $ 145.19 TRANSPORTE
 # Food
@@ -26,9 +26,14 @@ Most EDCs' concepts include the expense in the format of `<date> <concept short 
 
 Final output will be:
 
-```
+```text
 Transportation: $145.19
 Food: $98.50
 ------------
 GRAND TOTAL: $243.69
+```
+
+Usage:
+```bash
+python3 main.py --file-path <path to file with expenses>
 ```
