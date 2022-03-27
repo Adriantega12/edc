@@ -41,7 +41,8 @@ def handle_data():
       concept_total = concept_total_str,
       )
     )
-  print("Total: ${}".format(str(total)))
+  print("------------")
+  print("GRAND TOTAL: ${}".format(str(total)))
 
 def main():
   parse_arguments()

@@ -20,4 +20,15 @@ Most EDCs' concepts include the expense in the format of `<date> <concept short 
 ```
 # Transportation
 28/02/2022 STP UBER PENDING $ 145.19 TRANSPORTE
+# Food
+28/02/2022 DLOCAL*DIDI FOOD $ 98.50 TRANSPORTE
+```
+
+Final output will be:
+
+```
+Transportation: $145.19
+Food: $98.50
+------------
+GRAND TOTAL: $243.69
 ```
